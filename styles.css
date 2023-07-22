@@ -20,6 +20,37 @@ body {
  height: 100%;
  overflow: hidden; 
 }
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: rgba(128, 128, 128, 0.4);
+    height: 60px;
+}
+.header-buttons {
+    background-color: rgb(241, 240, 154);
+    font-family: medievalFont;
+    font-size: 18px;
+    width: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0%;
+    margin-right: 0%;
+    
+}
+.header-buttons:active {
+    width: 7%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -47,7 +78,7 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;    
-    margin-top: 40px;
+    margin-top: 30px;
     width: 60%;
     height: 500px;
     background-color: rgba(128, 128, 128, 0.3);    
@@ -55,10 +86,11 @@ i:hover {
 .newStorySection {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
     width: 80%;
-    height: 80%;
+    height: 90%;
     background: url("./images/images.jpg") no-repeat center center fixed;
     overflow: hidden;
     background-size: cover;
@@ -66,14 +98,15 @@ i:hover {
 }
 .storyImage {
     width: 50%;
-    height: auto;
+    height: 180px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 3px;
 }
 .storyText {
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
-    width: 80%; 
+    width: 80%;     
     background-color: rgb(241, 240, 154);
-    margin-bottom: 20px;
     font-family: medievalFont;
     font-size: 18px;
     border: 2px solid rgb(10, 10, 10);

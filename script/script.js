@@ -3,12 +3,12 @@ const legend = [
    {
        id: 0,
        image: "./images/old-world.jpg",
-       text: "Leyendas, esta tierra esta llena de ellas. Algunas son antiguas como las montañas y otras apenas han llegado aqui como las ultimas nevadas. Y de algunas, mi señor, quiza tu puedas ser parte. La que quiza te halla atraido aqui es la relacionada con la corona negra. Ese oscuro y poderoso artefacto que muchos han buscado.... " 
+       text: "Leyendas, esta tierra esta llena de ellas. Algunas son antiguas como las montañas y otras apenas han llegado aqui como las ultimas nevadas. Y de algunas, mi señor, quiza tu puedas ser parte. La que quiza te halla atraido aqui es la relacionada con la corona negra. Ese oscuro y poderoso artefacto que muchos han buscado en estas tierras. Y poe el que muchos han muerto... " 
     },
     {
       id: 1,
       image: "./images/king-fantasy.jpg",
-      text: "Antiguamente, antes de los tiempos de Sigmar, un poderoso rey habito estas tierras. Se dice que usando artes prohibidas de las tierras del sur creo una corona negra con oscuras runas en ella escritas en piedra bruja y capaz de darle poder tanto sobre espiritus como demonios. Con ella esclavizo tanto a vivos como a los muertos...." 
+      text: "Antiguamente, antes de los tiempos de Sigmar, un poderoso rey habito estas tierras. Se dice que usando artes prohibidas de las tierras del sur creo una corona negra con oscuras runas en ella escritas en piedra bruja y capaz de darle poder tanto sobre espiritus como demonios. Con ella esclavizo tanto a vivos como a muertos y grande fue el sufrimiento que trajo a la gente de aqui..." 
    },
    {
       id: 2,
