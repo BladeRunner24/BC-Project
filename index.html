@@ -9,18 +9,18 @@
 </head>
 <body>
     <header>
-        <button class = "header-buttons">Historia</button>
-        <button class = "header-buttons">Jugadores</button>
+        <button class = "header-buttons" id = "story_button">Historia</button>
+        <button class = "header-buttons" id = "player_button">Jugadores</button>
     </header>
     <main>
         <h1>La Corona Negra</h1>
-        <div class = "legendContainer">
-          <button class = "nav-buttons" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>  
-          <section class ="leyenda">         
+        <section class = "legendContainer">
+          <button class = "nav-buttons"><i class="fa-solid fa-chevron-left fa-2xl"  onclick="plusSlides(-1)"></i>Atras</button>  
+          <div class ="leyenda">         
             
-          </section>
-          <button class = "nav-buttons" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
-        </div>
+          </div>
+          <button class = "nav-buttons" >Adelante<i class="fa-solid fa-chevron-right fa-2xl" onclick="plusSlides(1)"></i></button>
+        </section>
     </main> 
     <footer>
 

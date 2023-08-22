@@ -1,3 +1,4 @@
+// Story page functions
 
 const legend = [
    {
@@ -77,4 +78,51 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";  
 }
+
+// Player page functions
+
+function playersButton () {
+ 
+  document.getElementById('player_button').addEventListener('click', function() {
+
+   const playerbody = document.getElementsByTagName('body');
+   const playerscreen = playerbody[0];
+   playerscreen.style.background = 'url("./images/battle.jpg") no-repeat center center fixed'; 
+   playerscreen.style.backgroundSize = 'cover';
+
+   const playertitle = document.getElementsByTagName('h1');
+   const newplayertirle = playertitle[0];
+   newplayertirle.innerText = 'Jugadores';
+   newplayertirle.style.color = 'white';
+  
+   const legendsection = document.getElementsByClassName("legendContainer");
+   const legendsectionone = legendsection[0];
+   legendsectionone.style.display = 'none';   
+  })   
+}
+
+playersButton()
+
+function storyButton () {
+
+   document.getElementById('story_button').addEventListener('click', function() {
+    
+    const playerbody = document.getElementsByTagName('body');
+    const playerscreen = playerbody[0];
+    playerscreen.style.background = 'url("./images/map.jpg") no-repeat center center fixed'; 
+    playerscreen.style.backgroundSize = 'cover';
+
+    const playertitle = document.getElementsByTagName('h1');
+    const newplayertirle = playertitle[0];
+    newplayertirle.innerText = 'La Corona Negra';
+    newplayertirle.style.color = 'black';
+  
+    const legendsection = document.getElementsByClassName("legendContainer");
+    const legendsectionone = legendsection[0];
+    legendsectionone.style.display = 'flex';
+
+   })
+}
+
+storyButton ()
 
