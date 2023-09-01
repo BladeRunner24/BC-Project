@@ -162,3 +162,6 @@ i:hover {
     padding: 2px 4px 2px 4px; 
     background-color: rgb(241, 240, 154);   
 }
+.playerCard button:hover {
+    background-color: rgb(212, 87, 48);
+}
