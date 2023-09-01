@@ -26,7 +26,7 @@ const legend = [
 const players = [
    {
      id: 0,
-     image: "/images/ogre.jpg",
+     image: "./images/ogre.jpg",
      description: "Martok el degollador. Ambicioso, salvaje y conocido por su habilidad para romper cabezas cuando no esta de buen humor. Un oscuro patrocinador le ha dado mucho oro y la informacion para buscar la corona negra. ¿Lo lograra? "
    }
 ]
