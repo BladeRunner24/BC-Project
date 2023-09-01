@@ -33,7 +33,7 @@ header {
     background-color: rgb(241, 240, 154);
     font-family: medievalFont;
     font-size: 18px;
-    width: 10%;
+    width: 5%;
     padding-top: 5px;
     padding-bottom: 5px;
     border: 2px solid rgb(10, 10, 10);
@@ -44,12 +44,10 @@ header {
     
 }
 .header-buttons:active {
-    width: 7%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-size: 16px;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    width: 5%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;    
 }
 main {
     display: flex;
@@ -114,4 +112,53 @@ i:hover {
     font-family: medievalFont;
     font-size: 18px;
     border: 2px solid rgb(10, 10, 10);
+}
+
+.playerContainer {
+    margin-top: 20px;
+    display: none;
+}
+.players {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+.playerCard {
+    background-color: rgb(89, 65, 145);
+    border-radius: 4%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+.playerImage {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;        
+}
+.playerImage img {
+    border-radius: 4%;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 300px;
+}
+.playerCard p {
+    font-family: medievalFont;
+    font-size: 18px;
+    background-color: rgb(241, 240, 154);
+    width: 95%;
+    border-radius: 4%; 
+    padding-left: 4px;   
+}
+.playerCard button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: medievalFont;
+    padding: 2px 4px 2px 4px; 
+    background-color: rgb(241, 240, 154);   
 }

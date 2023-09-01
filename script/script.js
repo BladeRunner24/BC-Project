@@ -1,10 +1,10 @@
-// Story page functions
+//Story, players and campaign data.
 
 const legend = [
    {
        id: 0,
        image: "./images/old-world.jpg",
-       text: "Leyendas, esta tierra esta llena de ellas. Algunas son antiguas como las montañas y otras apenas han llegado aqui como las ultimas nevadas. Y de algunas, mi señor, quiza tu puedas ser parte. La que quiza te halla atraido aqui es la relacionada con la corona negra. Ese oscuro y poderoso artefacto que muchos han buscado en estas tierras. Y poe el que muchos han muerto... " 
+       text: "Leyendas, esta tierra esta llena de ellas. Algunas son antiguas como las montañas y otras apenas han llegado aqui como las ultimas nevadas. Y de algunas, mi señor, quiza tu puedas ser parte. La que quiza te halla atraido aqui es la relacionada con la corona negra. Ese oscuro y poderoso artefacto que muchos han buscado en estas tierras. Y por el que muchos han muerto... " 
     },
     {
       id: 1,
@@ -20,9 +20,18 @@ const legend = [
       id: 3,
       image: "./images/aventurero.jpg",
       text: "Un aventurero moribundo y al borde de la locura llego hace poco a esta posada diciendo que encontro la tumba del rey brujo a 6 dias de aqui en las montañas del este. Habia mucha gente cuando aparecio y muchos vieron el mapa que mostro. Muchos grupos, poderosos y con ejercitos, se estan preparando para buscar la tumba del rey, sus tesoros, y quiza tambien la corona negra. Te atreveras a ser uno de ellos?"   
-   }                      
-    
+   }                  
 ]
+
+const players = [
+   {
+     id: 0,
+     image: "/images/ogre.jpg",
+     description: "Martok el degollador. Ambicioso, salvaje y conocido por su habilidad para romper cabezas cuando no esta de buen humor. Un oscuro patrocinador le ha dado mucho oro y la informacion para buscar la corona negra. ¿Lo lograra? "
+   }
+]
+
+// Story page functions
 
 const storySection = document.getElementsByClassName("leyenda");
 const story = storySection[0]
@@ -64,22 +73,25 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
+   
   let i;
   let slides = document.getElementsByClassName("newStorySection");
-    if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "flex";  
+    if (n > slides.length) {slideIndex = slides.length}
+    if (n < 1) {slideIndex = 1}
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "flex";         
 }
 
-// Player page functions
+// header buttons functions
 
 function playersButton () {
  
@@ -97,7 +109,11 @@ function playersButton () {
   
    const legendsection = document.getElementsByClassName("legendContainer");
    const legendsectionone = legendsection[0];
-   legendsectionone.style.display = 'none';   
+   legendsectionone.style.display = 'none';
+   
+   const playersection = document.getElementsByClassName("playerContainer");
+   const playersectionone = playersection[0];
+   playersectionone.style.display = 'flex';
   })   
 }
 
@@ -121,8 +137,49 @@ function storyButton () {
     const legendsectionone = legendsection[0];
     legendsectionone.style.display = 'flex';
 
+   const playersection = document.getElementsByClassName("playerContainer");
+   const playersectionone = playersection[0];
+   playersectionone.style.display = 'none';
+
    })
 }
 
 storyButton ()
+
+// Players page functions
+
+const playersSection = document.getElementsByClassName("players");
+const playersgallery = playersSection[0]
+
+function playersDisplay() {
+
+   players.forEach((player) => {
+
+      const description = document.createElement("div");
+      const descriptionsection = document.createElement("div");
+      const images = document.createElement("img");
+      const text = document.createElement("p");
+      const campaign_button = document.createElement("button");
+
+      playersgallery.appendChild(description);
+
+      description.appendChild(descriptionsection);
+      descriptionsection.appendChild(images);
+      
+      description.appendChild(text);
+      description.appendChild(campaign_button);
+
+      description.className = "playerCard"
+
+      descriptionsection.className = "playerImage";
+      images.src = player.image;
+      images.alt = "Player Image";
+
+      text.innerText = player.description;
+
+      campaign_button.innerText = "Campaign"
+   })   
+}
+
+playersDisplay()
 
