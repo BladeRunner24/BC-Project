@@ -27,8 +27,13 @@ const players = [
    {
      id: 0,
      image: "./images/ogre.jpg",
-     description: "Martok el degollador. Ambicioso, salvaje y conocido por su habilidad para romper cabezas cuando no esta de buen humor. Un oscuro patrocinador le ha dado mucho oro y la informacion para buscar la corona negra. ¿Lo lograra? "
-   }
+     description: "Martok el degollador. Brutal, salvaje y conocido por su habilidad para romper cabezas cuando no esta de buen humor. Un oscuro patrocinador le ha dado mucho oro y la informacion para buscar la corona negra. ¿Lo lograra? "
+   },
+   {
+      id: 1,
+      image: "./images/Greyseer.webp",
+      description: "Skrizzit, maestro ingeniero brujo del clan Skryre. Astuto, ambicioso y maestro de la magia y la tecnologia. Decidido a conseguir la Corona negra para lograr su merecida posicion y vencer a sus enemigos hara lo que sea para lograrlo."
+    }
 ]
 
 // Story page functions
